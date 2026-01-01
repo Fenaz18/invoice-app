@@ -201,6 +201,7 @@ export default function CreateInvoice() {
   }
 
   // --- SAVE DB ---
+ 
   const handleSave = async () => {
     if (!clientId) return alert("Select a client first")
     setLoading(true)
@@ -208,6 +209,14 @@ export default function CreateInvoice() {
     try {
       const { data: { user } } = await supabase.auth.getUser()
       const total = generatePDF('save')
+
+      // Prepare the design object
+      const designData = {
+        template: template,
+        themeColor: themeColor,
+        font: font,
+        logo: logo // This saves the Base64 image string
+      }
 
       const { data: invoiceData, error: invError } = await supabase
         .from('invoices')
@@ -217,7 +226,8 @@ export default function CreateInvoice() {
           due_date: dates.due_date,
           payment_terms: dates.payment_terms,
           status: 'Draft',
-          total_amount: total
+          total_amount: total,
+          design: designData 
         }])
         .select()
 

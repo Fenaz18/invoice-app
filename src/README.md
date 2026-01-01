@@ -2,8 +2,8 @@
 
 A modern, full-stack Invoice Management Application built with **React** and **Supabase**. This application allows freelancers and small businesses to manage clients, create professional invoices, and track payments with a real-time dashboard.
 
-🔴 **Live Demo:** [Insert your Vercel Link Here]  
-*(e.g., https://my-invoice-app.vercel.app)*
+🔴 **Live Demo:** invoice-app-sand-chi.vercel.app
+
 
 ---
 
@@ -48,21 +48,6 @@ A modern, full-stack Invoice Management Application built with **React** and **S
 
 ---
 
-## 📸 Screenshots
-
-### 1. Dashboard
-*(Add your dashboard screenshot here)*
-![Dashboard Screenshot](./screenshots/dashboard.png)
-
-### 2. Create Invoice & Design
-*(Add your design panel screenshot here)*
-![Create Invoice](./screenshots/create-invoice.png)
-
-### 3. Generated PDF
-*(Add your PDF screenshot here)*
-![PDF Output](./screenshots/pdf-sample.png)
-
----
 
 ## 🚀 Getting Started
 
@@ -70,7 +55,7 @@ Follow these steps to run the project locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/invoice-app.git](https://github.com/YOUR_USERNAME/invoice-app.git)
+git clone (https://github.com/Fenaz18/invoice-app.git)
 cd invoice-app
 
 ### 2. Install Dependencies
@@ -119,4 +104,5 @@ description (text)
 quantity, price, tax (numeric)
 
 👤 Author
-Built by [Fenaz] Check out my GitHub: github.com/YOUR_USERNAME
+Built by [Fenaz] 
+Check out my GitHub: (https://github.com/Fenaz18)
